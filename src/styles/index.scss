@@ -2,3 +2,37 @@
   margin: 0;
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input {
+  outline: none;
+}
+
+html, body, #app {
+  height: 100%;
+}
+
+$prefixCls:             "piexGo-promise";                    // cls
+
+
+$bg-color:              #152130;                             // body背景颜色
+$main-color:            #1A2636;                             // 主要的黑色
+$yellow-color:          #FE9A00;                             // 黄色
+$text-white-color-85:   rgba(255, 255, 255, .85);            // 白色(透明度85)
+$text-white-color-75:   rgba(255, 255, 255, .75);            // 白色(透明度75)
+$text-white-color-55:   rgba(255, 255, 255, .55);            // 白色(透明度55)
+$text-white-color-45:   rgba(255, 255, 255, .45);            // 白色(透明度45)
+$text-gray-color:       #919CA4;                             // 灰色
+$green-color:           #38AF75;                             // 涨跌幅绿色
+$green-color-85:        rgba(61,181,122,0.85);               // 涨跌幅绿色(透明度85)
+$red-color:             #CA5556;                             // 涨跌幅红色
+
+
+@import "./components/Main";

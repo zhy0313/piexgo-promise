@@ -1,0 +1,6 @@
+$cls: "#{$prefixCls}-main";
+
+".#{$cls}" {
+  height: 100%;
+  background-color: $bg-color;
+}

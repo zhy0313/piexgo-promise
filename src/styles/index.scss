@@ -1,6 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  line-height: 1;
+}
+
+html, body {
+  font: 12px Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
 }
 
 a {
@@ -19,6 +24,14 @@ html, body, #app {
   height: 100%;
 }
 
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 $prefixCls:             "piexGo-promise";                    // cls
 
 
@@ -33,6 +46,20 @@ $text-gray-color:       #919CA4;                             // 灰色
 $green-color:           #38AF75;                             // 涨跌幅绿色
 $green-color-85:        rgba(61,181,122,0.85);               // 涨跌幅绿色(透明度85)
 $red-color:             #CA5556;                             // 涨跌幅红色
+$line-color:            rgba(145,156,164,0.16);              // 线颜色
 
+
+// base
+$big-font:          24px;
+$large-font:        22px;
+$medium-font:       18px;
+$average-font:      16px;
+$regular-font:      14px;
+$small-font:        12px;
+
+
+// font
+$Avenir-family: "Avenir", sans-serif;
 
 @import "./components/Main";
+@import "./components/Nav";

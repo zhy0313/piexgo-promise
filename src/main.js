@@ -6,6 +6,9 @@ import router from './router';
 import axios from "axios";
 import qs from "qs";
 import store from "./store";
+import PublicComponents from "./customize";
+
+Vue.use(PublicComponents); // 公共组件
 
 Vue.config.productionTip = false;
 Vue.prototype.$http = axios;

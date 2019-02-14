@@ -3,4 +3,22 @@ $cls: "#{$prefixCls}-main";
 ".#{$cls}" {
   height: 100%;
   background-color: $bg-color;
+  .container {
+    margin-top: 4px;
+    display: flex;
+    .left {
+      max-width: 1164px;
+      min-width: calc(100% - 41.75%);
+      flex: 1;
+      #tradingview {
+        height: 568px;
+      }
+    }
+    .right {
+      min-width: calc(100% - 58.25% - 4px);
+      max-width: 800px;
+      margin-left: 4px;
+      flex: 1;
+    }
+  }
 }

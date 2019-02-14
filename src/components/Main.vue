@@ -1,10 +1,20 @@
 <template>
   <div :class="wrapperCls">
-    <h1>hello world</h1>
+    <Nav></Nav>
+    <div class="container">
+      <div class="left">
+        <div id="tradingview"></div>
+      </div>
+      <div class="right">
+
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import Tv from "@/tv";
+import {ws_open} from "../ws/websocket";
 const prefixCls = "piexGo-promise-main";
 export default {
   data() {
@@ -16,6 +26,9 @@ export default {
     wrapperCls() {
       return `${prefixCls}`
     }
+  },
+  mounted() {
+    ws_open(_ =>  Tv.start());
   }
 }
 </script>

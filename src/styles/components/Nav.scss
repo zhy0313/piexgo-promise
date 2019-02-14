@@ -1,0 +1,85 @@
+$cls: "#{$prefixCls}-nav";
+
+".#{$cls}" {
+  height: 72px;
+  background-color: $main-color;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  .left {
+    display: flex;
+    a.logo {
+      img {
+        height: 36px;
+      }
+    }
+    .dimension {
+      display: flex;
+      border-right: 1px $line-color solid;
+      padding-right: 17px;
+      .toggle {
+        margin-left: 40px;
+        p.text {
+          font-size: $small-font;
+          color: $text-white-color-55;
+        }
+        .part {
+          margin-top: 4px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          p.cont {
+            font-size: $big-font;
+            color: $text-white-color-85;
+          }
+          i.icon-arrowdown-copy {
+            color: $text-gray-color;
+            font-size: $medium-font;
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+    .digital {
+      padding-left: 24px;
+      display: flex;
+      align-items: center;
+      .item {
+        margin-right: 40px;
+        height: 40px;
+        p.text {
+          font-size: $small-font;
+          color: $text-white-color-55;
+        }
+        p.count {
+          margin-top: 10px;
+          color: $text-white-color-85;
+          font-size: $average-font;
+          font-family: $Avenir-family;
+        }
+        .change {
+          display: flex;
+          margin-top: 4px;
+          align-items: center;
+          font-family: $Avenir-family;
+          .amount {
+            font-size: $big-font;
+            color: $green-color;
+          }
+          .rate {
+            font-size: $average-font;
+            margin-left: 12px;
+            color: $green-color;
+            height: 24px;
+            display: flex;
+            align-items: flex-end;
+            line-height: 20px;
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
